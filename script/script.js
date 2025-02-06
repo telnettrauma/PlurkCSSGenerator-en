@@ -82,7 +82,7 @@
   const resetHandler = () => {
     const resetButton = document.querySelector('.reset_button');
     resetButton.addEventListener('click', () => {
-      const isReset = confirm('確定要清空所有設定嗎？');
+      const isReset = confirm('Are you sure you want to clear all settings?');
       if (!isReset) return;
       resetButtonClickHandler();
       exportCode.value = '';
@@ -95,7 +95,7 @@
     const plurkbox = document.querySelector('#form_holder');
     plurkboxButton.addEventListener('click', () => {
       plurkbox.classList.toggle('no-display');
-      const newText = plurkboxButton.textContent === '隱藏噗內回應' ? '顯示噗內回應' : '隱藏噗內回應';
+      const newText = plurkboxButton.textContent === 'Show Response Box' ? 'Show Response Box' : 'Hide Response Box';
       plurkboxButton.textContent = newText;
     });
   };
@@ -331,34 +331,34 @@
     return [`url('${value}')`, 'position: relative', 'margin: 0 auto', 'background-repeat: no-repeat', 'background-position: center center'];
   };
   const valueUp = () => {
-    const result = ['噗友暱稱', ['.timeline-cnt .td_qual > span', ['position: absolute', 'transform: translate(-25px, -150%)']]];
+    const result = ['Plurk friend nickname', ['.timeline-cnt .td_qual > span', ['position: absolute', 'transform: translate(-25px, -150%)']]];
     return [result];
   };
   const valueBoxup = () => {
-    const result = ['噗內暱稱上移', ['#form_holder .plurk_cnt .td_qual', ['position: absolute']], ['#form_holder .plurk_cnt .text_holder', ['margin-top: 1.5em', 'padding-left: 0.7em']]];
+    const result = ['Move nickname above Plurk', ['#form_holder .plurk_cnt .td_qual', ['position: absolute']], ['#form_holder .plurk_cnt .text_holder', ['margin-top: 1.5em', 'padding-left: 0.7em']]];
     return [result];
   };
   const valueOpen = (value) => {
-    const top = ['頻道向上展開', ['#filter_tab a, #filter_tab:hover a.no_unread', ['height: 25px', 'margin-top: 6px', 'margin-right: 6px']]];
-    const right = ['頻道向右展開', ...top.slice(1), ['#filter_tab li', ['clear: none', 'width: auto']]];
+    const top = ['Vertical list', ['#filter_tab a, #filter_tab:hover a.no_unread', ['height: 25px', 'margin-top: 6px', 'margin-right: 6px']]];
+    const right = ['Horizontal list', ...top.slice(1), ['#filter_tab li', ['clear: none', 'width: auto']]];
     const result = { top, right };
     return [result[value]];
   };
   const valueFtposi = () => {
-    const result = ['頻道往右放', ['.timeline_control', ['margin-left: 0']], ['#timeline_control_holder', ['width: 100%']], ['#updater', ['left: 10px']], ['#filter_tab', ['padding-right: 20px']]];
+    const result = ['Move filters to right', ['.timeline_control', ['margin-left: 0']], ['#timeline_control_holder', ['width: 100%']], ['#updater', ['left: 10px']], ['#filter_tab', ['padding-right: 20px']]];
     return [result];
   };
   const valueToicon = () => {
     const countposiValue = document.querySelector('.control_filterstyle_countposi:checked').value;
     const top = [
-      '讓頻道未讀數字出現在上面',
+      'Display unread Plurk count on filter',
       [
         '#filter_tab a .unread_generic',
         ['position: absolute', 'left: 0', 'width: 30px', 'height: 20px', 'line-height: 20px', 'margin: 0', 'padding: 0', 'transform: translateY(-100%)', 'border-radius: 5px'],
       ],
     ];
     const right = [
-      '讓頻道未讀數字出現在右邊',
+      'Display unread Plruk count on right',
       ['#updater', ['margin-left: 35px']],
       [
         '#filter_tab a .unread_generic',
@@ -366,7 +366,7 @@
       ],
     ];
     const left = [
-      '讓頻道未讀數字出現在左邊',
+      'Display unread Plurk count on left',
       [
         '#filter_tab a .unread_generic',
         [
@@ -386,7 +386,7 @@
     ];
     const countposi = { top, right, left };
     const icon = [
-      '頻道圖示化',
+      'Filter Graphics',
       ['#filter_tab li', ['position: relative']],
       ['#filter_tab a', ['width: 30px', 'padding: 0', 'overflow: hidden']],
       ['#filter_tab a i', ['float: left', 'width: 30px', 'line-height: 25px']],
