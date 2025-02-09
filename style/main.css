@@ -1197,15 +1197,13 @@ button {
 .review .pif-follow::before,
 .review .pif-volume::before,
 .review .pif-media::before {
-  content: '❅';
-  font-size: 18px;
+  /* content: '❅'; */
+  /* font-size: 18px; */
   margin-right: 0;
 	font-family: 'PlurkIconFont';
 }
 
-.pif-message-new::before,
-.pif-messages::before,
-.off_tab [class^='pif-']::before {font-size: 12px !important;}
+.off_tab [class^='pif-']::before, .manager [class^='pif-']::before {font-size: 12px !important;}
 
 .pif-emoticon::before {content: "\f012";}
 .pif-media::before {content: "\f01e";}
@@ -1219,6 +1217,13 @@ button {
 .pif-message::before {content: "\f023";}
 .pif-tag::before {content: "\f040";}
 .pif-private-message::before, .pif-message-private::before {content: "\f022";}
+.pif-user-add::before {content: "\f036";}
+.pif-follow::before {content: "\f015";}
+.pif-arrow-points::before {content: "\f005";}
+.pif-star::before {content: "\f05e";}
+.pif-volume::before {content: "\f03d";}
+.pif-bone::before {content: "\f03f";}
+.pif-option::before {content: "\f053";}
 
 .review #layout_content {
   position: relative;
