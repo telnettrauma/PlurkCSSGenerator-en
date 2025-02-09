@@ -1203,9 +1203,22 @@ button {
 	font-family: 'PlurkIconFont';
 }
 
-.review .pif-emoticon::before {
-	content: '\f012';
-}
+.pif-message-new::before,
+.pif-messages::before,
+.off_tab [class^='pif-']::before {font-size: 12px !important;}
+
+.pif-emoticon::before {content: "\f012";}
+.pif-media::before {content: "\f01e";}
+.pif-anynomous::before {content: "\f06f";}
+.pif-privacy::before {content: "\f02a";}
+.pif-message-new::before {content: "\f021";}
+.pif-message-my::before {content: "\f020";}
+.pif-messages::before {content: "\f024";}
+.pif-like::before {content: "\f01c";}
+.pif-replurk::before {content: "\f02f";}
+.pif-message::before {content: "\f023";}
+.pif-tag::before {content: "\f040";}
+.pif-private-message::before, .pif-message-private::before {content: "\f022";}
 
 .review #layout_content {
   position: relative;
