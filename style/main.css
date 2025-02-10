@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 @font-face {
   font-family: "PlurkIconFont";
-	src: url("font/PlurkIconFont.ttf");
+  src: url("font/PlurkIconFont.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -1200,7 +1200,7 @@ button {
   /* content: '❅'; */
   /* font-size: 18px; */
   margin-right: 0;
-	font-family: 'PlurkIconFont';
+  font-family: 'PlurkIconFont';
 }
 
 .off_tab [class^='pif-']::before, .manager [class^='pif-']::before {font-size: 12px !important;}
