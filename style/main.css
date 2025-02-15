@@ -1224,6 +1224,7 @@ button {
 .pif-volume::before {content: "\f03d";}
 .pif-bone::before {content: "\f03f";}
 .pif-option::before {content: "\f053";}
+.pif-poll::before {content: "\f06c";}
 
 .review #layout_content {
   position: relative;
@@ -2119,7 +2120,7 @@ button {
 
 .review .icons_holder .pif-emoticon::before,
 .review .icons_holder .pif-media::before,
-.review .icons_holder .pif-sync::before,
+.review .icons_holder .pif-poll::before,
 .review .icons_holder .pif-anynomous::before,
 .review .icons_holder .pif-privacy::before {
   font-size: 26px;
@@ -2141,12 +2142,12 @@ button {
   color: #7ab1b7;
 }
 
-.review .icons_holder .pif-sync {
-  color: #96cb84;
+.review .icons_holder .pif-poll {
+  color: #39aee0;
 }
 
-.review .icons_holder .pif-sync:hover {
-  color: #81ac72;
+.review .icons_holder .pif-poll:hover {
+  color: #4FA2CF;
 }
 
 .review .icons_holder .pif-anynomous {
