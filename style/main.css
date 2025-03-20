@@ -604,6 +604,10 @@ button {
   margin: 0 -10px;
 }
 
+.preview-img {
+	max-width: 100%;
+}
+
 .generator_container-open .generator_body {
   display: -webkit-box;
   display: -ms-flexbox;
