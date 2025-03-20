@@ -608,6 +608,12 @@ button {
 	max-width: 100%;
 }
 
+/* TODO: remove this line once you're done taking screenshots */
+.ss-highlight {
+	border: 5px dashed #e9443d;
+	padding: 5px;
+}
+
 .generator_container-open .generator_body {
   display: -webkit-box;
   display: -ms-flexbox;
